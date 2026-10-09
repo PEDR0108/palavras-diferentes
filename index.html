@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colisão de Hash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Encontrar colisão de Hash</h1>
+        <p>
+            Digite duas palavras diferentes com pelo menos
+            duas letras para comparar seus hashes.
+        </p>
+
+        <label for="palavra1">Primeira palavra</label>
+        <input id="palavra1" type="text" placeholder="Ex.: amor">
+
+        <label for="palavra2">Segunda palavra</label>
+        <input id="palavra2" type="text" placeholder="Ex.: roma">
+
+        <button onclick="compararHashes()">
+            Calcular Hash
+        </button>
+
+        <section id="resultado" aria-live="polite"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
